@@ -5,8 +5,8 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Github, Linkedin, FileText } from 'lucide-react';
-import { NAV_LINKS, SOCIAL_LINKS } from '../constants/data';
+import { Menu, X } from 'lucide-react';
+import { NAV_LINKS } from '../constants/data';
 import { cn } from '../lib/utils';
 
 export default function Navbar() {
@@ -69,27 +69,6 @@ export default function Navbar() {
               </motion.a>
             ))}
           </div>
-
-          <div className="flex items-center gap-5">
-            {SOCIAL_LINKS.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-zinc-500 hover:text-zinc-100 transition-colors"
-                title={link.name}
-              >
-                <link.icon size={18} />
-              </a>
-            ))}
-            <a
-              href="/resume.pdf"
-              className="px-5 py-2 rounded-xl bg-zinc-100 text-bg-dark text-xs font-bold uppercase tracking-widest hover:bg-accent hover:text-bg-dark transition-all"
-            >
-              Resume
-            </a>
-          </div>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -124,28 +103,6 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <div className="h-px bg-zinc-800 my-2" />
-              <div className="flex items-center gap-6">
-                {SOCIAL_LINKS.map((link) => (
-                  <a
-                    key={link.name}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-zinc-400 hover:text-accent transition-colors"
-                  >
-                    <link.icon size={24} />
-                  </a>
-                ))}
-              </div>
-              <a
-                href="/resume.pdf"
-                className="btn-primary w-full"
-                onClick={() => setIsOpen(false)}
-              >
-                <FileText size={18} className="mr-2" />
-                Download Resume
-              </a>
             </div>
           </motion.div>
         )}

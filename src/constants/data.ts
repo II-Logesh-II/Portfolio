@@ -34,7 +34,7 @@ export const NAV_LINKS = [
 ];
 
 export const SOCIAL_LINKS = [
-  { name: 'GitHub', href: 'https://github.com/logeswaran-s', icon: Github },
+  { name: 'GitHub', href: 'https://github.com/II-Logesh-II', icon: Github },
   { name: 'LinkedIn', href: 'https://linkedin.com/in/logeswaran-selvapandian', icon: Linkedin },
 ];
 
@@ -230,5 +230,5 @@ export const CONTACT_INFO = {
   phone: "+1 (682) 559-8983",
   email: "logeshaswin21@gmail.com",
   linkedin: "https://linkedin.com/in/logeswaran-selvapandian",
-  github: "https://github.com/logeswaran-s",
+  github: "https://github.com/II-Logesh-II",
 };
