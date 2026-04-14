@@ -228,7 +228,7 @@ export const EDUCATION = [
 
 export const CONTACT_INFO = {
   phone: "+1 (682) 559-8983",
-  email: "logeshaswin21@gmail.com",
+  email: "logeswaran.s2105@gmail.com",
   linkedin: "https://www.linkedin.com/in/loges-waran-s/",
   github: "https://github.com/II-Logesh-II",
 };
